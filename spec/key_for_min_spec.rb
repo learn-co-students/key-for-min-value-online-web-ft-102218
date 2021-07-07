@@ -1,3 +1,5 @@
+require 'pry'
+
 describe "smallest hash value" do
 
   it "does not call the `#keys` method" do
@@ -50,6 +52,7 @@ describe "smallest hash value" do
 
   it "returns the key of the smallest hash value" do
     expect(key_for_min_value({:blake => 500, :ashley => 2, :adam => 1})).to eq(:adam)
+    #binding.pry
   end
 
   it "returns the key of the smallest hash value example 2" do
